@@ -1,34 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="Assets/css/contato.css">
 </head>
+
 <body>
     <header>
         <a href="index.html">Home</a>
         <a href="contato.html">Contato</a>
     </header>
     <main>
-        <h1>Informe seus dados: </h1>
+        <div id="container" >
+            <section id="form">
+                <h1>Informe seus dados: </h1>
 
-        <label>Nome:</label><br>
-        <input type="text">
+                <label>Nome:</label><br>
+                <input type="text">
 
-        <br><br>
-        <label>E-mail:</label><br>
-        <input type="email">
+                <br><br>
+                <label>E-mail:</label><br>
+                <input type="email">
 
-        <br><br>
-        <label>Assunto: </label><br>
-        <textarea name="assunto" id="assunto" cols="90" rows="20"></textarea>
-        <br>
-        <button>Enviar</button>
+                <br><br>
+                <label>Assunto: </label><br>
+                <textarea name="assunto" id="assunto" cols="70" rows="15"></textarea>
+                <br>
+                <button>Enviar</button>
+            </section>
 
-        <h2>Endereço: </h2>
-        <label>Cidade de Shibuya Tóquio, Japão</label>
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="703" height="406" id="gmap_canvas" src="https://maps.google.com/maps?q=shibuia&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.intimer.net/">online countdown timer</a><br><a href="https://www.clock-alarm.com/"></a><br><style>.mapouter{position: relative;text-align: right;height: 406px;width: 703px;}</style><a href="https://www.ongooglemaps.com">google maps embed iframe</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 406px;width: 703px;}</style></div></div>
+            <section id="maps">
+                <h2>Endereço: </h2>
+                <label>Cidade de Shibuya Tóquio, Japão</label>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="703" height="406" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=shibuia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://www.intimer.net/">online
+                            countdown timer</a><br><a href="https://www.clock-alarm.com/"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 406px;
+                                width: 703px;
+                            }
+                        </style><a href="https://www.ongooglemaps.com">google maps embed iframe</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 300px;
+                                width: 500px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
+
 </html>
